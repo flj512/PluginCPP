@@ -97,4 +97,4 @@ class PluginManager {
           name, []() { return new Class(); }, #Type);                        \
     }                                                                        \
   };                                                                         \
-  static __Register##Class __register##Class_instance
+  static __Register##Class __register_instance_##Class
