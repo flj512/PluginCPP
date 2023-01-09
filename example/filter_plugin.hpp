@@ -9,8 +9,14 @@ public:
 };
 }
 
-#define REGISTER_FILLTER(name,Class)  PLUGIN_REGISTER_TYPE(Interface::Filter,name,Class)
+#define REGISTER_FILTER(name,Class)  PLUGIN_REGISTER_TYPE(Interface::Filter,name,Class)
 
+/**
+ * @brief Create a Filter instance
+ * 
+ * @param name plugin name
+ * @return Interface::Filter* 
+ */
 Interface::Filter* createFilter(const char* name)
 {
     return TinyLib::PluginManager<Interface::Filter>::getInstance().create(name);

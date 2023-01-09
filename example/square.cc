@@ -15,5 +15,5 @@ public:
     }
 };
 // register inside the namespace
-REGISTER_FILLTER("square",Square);
+REGISTER_FILTER("square",Square);
 }

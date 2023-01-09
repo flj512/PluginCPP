@@ -17,6 +17,6 @@ private:
     int _base;
 };
 // register inside the namespace
-REGISTER_FILLTER("add",Add);
+REGISTER_FILTER("add",Add);
 }
 
