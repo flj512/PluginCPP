@@ -53,8 +53,17 @@ REGISTER_FILTER("square",Square);
  * @param name plugin name
  * @return Interface::Filter* 
  */
-Interface::Filter* createFilter(const char* name)
+inline Interface::Filter* createFilter(const char* name)
 {
     return TinyLib::PluginManager<Interface::Filter>::getInstance().create(name);
 }
+```
+```
+    auto square = createFilter("square");
+    if (square == nullptr){
+        std::cout <<"create square filter fail"<<std::endl;
+        return 1;
+    }
+
+    std::cout<<"square filter (2) = "<< square->process(2)<<std::endl;
 ```
