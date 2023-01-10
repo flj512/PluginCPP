@@ -1,5 +1,8 @@
 # PluginCPP
 A tiny utils for managing cpp plugin, there is no dependences and only one header file.  
+  
+Another way to use this library is building all the implementation in one library so that  
+avoid creating a factory class and many codes like `if(name=="foo") new Foo()`.
 
 # Usage
 The folder `example` contains an example to demonstrate how to use.
