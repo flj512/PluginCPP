@@ -59,11 +59,11 @@ inline Interface::Filter* createFilter(const char* name)
 }
 ```
 ```
-    auto square = createFilter("square");
-    if (square == nullptr){
-        std::cout <<"create square filter fail"<<std::endl;
-        return 1;
-    }
+auto square = createFilter("square");
+if (square == nullptr){
+    std::cout <<"create square filter fail"<<std::endl;
+    return 1;
+}
 
-    std::cout<<"square filter (2) = "<< square->process(2)<<std::endl;
+std::cout<<"square filter (2) = "<< square->process(2)<<std::endl;
 ```
