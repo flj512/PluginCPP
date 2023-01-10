@@ -13,6 +13,10 @@ The folder `example` contains an example to demonstrate how to use.
 #include "plugin.hpp"
 
 namespace Interface{
+/**
+ * @brief the implementation of Filter should have a default constructor.
+ * Usually, there is a init function in the Plugin interface.
+ */
 class Filter{
 public:
     virtual ~Filter(){}

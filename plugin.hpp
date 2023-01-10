@@ -27,6 +27,11 @@
 
 
 namespace TinyLib {
+/**
+ * @brief a utils to manage cpp plugins or replace Factory mode.
+ * 
+ * @tparam T Note: the T should have a default constructor.
+ */
 template <typename T>
 class PluginManager {
  public:
