@@ -17,7 +17,7 @@ public:
  * @param name plugin name
  * @return Interface::Filter* 
  */
-Interface::Filter* createFilter(const char* name)
+inline Interface::Filter* createFilter(const char* name)
 {
     return TinyLib::PluginManager<Interface::Filter>::getInstance().create(name);
 }

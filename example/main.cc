@@ -22,8 +22,8 @@ int main()
         return 1;
     }
 
-    std::cout<<"add filter 2 = "<< add->process(2)<<std::endl;
-    std::cout<<"square filter 2 = "<< square->process(2)<<std::endl;
+    std::cout<<"add filter (2) = "<< add->process(2)<<std::endl;
+    std::cout<<"square filter (2) = "<< square->process(2)<<std::endl;
 
     delete square;
     delete add;
